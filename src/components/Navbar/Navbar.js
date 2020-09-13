@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { makeStyles } from '@material-ui/core/styles';
 import {AppBar, Toolbar, Typography, Button} from '@material-ui/core';
 // import { red } from '@material-ui/core/colors';
@@ -28,12 +29,13 @@ export default function Navbar(props) {
           {/* <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
             <MenuIcon />
           </IconButton>  */}
-          <Button color="inherit" className="navButton" onClick={() => props.changePage("Home")}>Home</Button>
-          <Button color="inherit" className="navButton" onClick={() => props.changePage("Projects")}>Projects</Button>
+
+          <Link to="/"><Button color="inherit" className="navButton" /* onClick={() => props.changePage("Home")} */>Home</Button></Link>
+          <Link to="/projects"><Button color="inherit" className="navButton" /* onClick={() => props.changePage("Projects")} */>Projects</Button></Link>
           <Typography variant="h6" className={`${classes.title} navTitle`} align="center"> {props.title} </Typography>
-          
-          <Button color="inherit" className="navButton" onClick={() => props.changePage("Future")}>Future</Button>
-          <Button color="inherit" className="navButton" onClick={() => props.changePage("About")}>About</Button>
+          <Link to="/future"><Button color="inherit" className="navButton" /* onClick={() => props.changePage("Future")} */>Future</Button></Link>
+          <Link to="/about"><Button color="inherit" className="navButton" /* onClick={() => props.changePage("About")} */>About</Button></Link>
+
         </Toolbar>
       </AppBar>
     </div>
