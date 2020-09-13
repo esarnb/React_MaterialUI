@@ -28,7 +28,7 @@ export default class Projects extends Component {
                 { loading ? <h1 className="centerVert">
                     Loading . . . 
                 </h1> : <div>
-                    <h2 className="center pageTitle">Github Repository - Hourly Update</h2>
+                    <h2 className="center pageTitle">Github Repository <h6 style={{paddingLeft: "0.5%"}}>[<a className="ProjectHyperlink" href="https://github.com/esarnb/">⧉</a>]</h6></h2>
                     <div id="cardContainer">
                         {userdata && userdata.length ? [...userdata.map((x,i) => <Card info={x} key={`PC-${i}`}/>)] : null}
                     </div>
