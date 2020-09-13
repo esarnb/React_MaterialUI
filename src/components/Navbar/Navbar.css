@@ -1,0 +1,17 @@
+.navTitle {
+    color: rgb(0, 200, 255);
+}
+
+.navButton {
+    color: rgb(190, 190, 190) !important;
+}
+
+
+.navButton :hover {
+    color: rgb(73, 137, 255);
+}
+
+#NavAppbar {
+    background-color: rgba(134, 134, 134, 0.692);
+    color: rgb(0, 0, 0);
+}
